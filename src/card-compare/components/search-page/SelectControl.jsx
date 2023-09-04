@@ -1,0 +1,26 @@
+import { FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+
+export const SelectControl = () => {
+
+  const age = 20;
+
+  return (
+    <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+      <InputLabel id="demo-select-small-label">Age</InputLabel>
+      <Select
+        labelId="demo-select-small-label"
+        id="demo-select-small"
+        value={age}
+        label="Age"
+        // onChange={handleChange}
+      >
+        <MenuItem value="">
+          <em>None</em>
+        </MenuItem>
+        <MenuItem value={10}>Ten</MenuItem>
+        <MenuItem value={20}>Twenty</MenuItem>
+        <MenuItem value={30}>Thirty</MenuItem>
+      </Select>
+    </FormControl>
+  )
+}

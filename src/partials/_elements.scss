@@ -1,0 +1,10 @@
+a {
+  &.link {
+    &-wrapper {
+      align-items: center;
+      display: flex;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+}
